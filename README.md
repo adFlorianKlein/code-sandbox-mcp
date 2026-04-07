@@ -18,6 +18,7 @@ All filesystem and build tools are sandboxed to `/workspace`. Path traversal is 
 |---|---|
 | `code-sandbox-base` | Python 3.12, git |
 | `code-sandbox-java` | + Maven |
+| `code-sandbox-nodejs` | + NodeJS, npm |
 | `code-sandbox-full` | + Maven, Node.js, npm |
 
 ## Quick Start
@@ -28,7 +29,7 @@ cp example.env .env
 # Edit .env — set GIT_TOKEN, GIT_USER_NAME, etc.
 
 # 2. Build
-./build.sh v0.0.1
+./build.sh
 
 # 3. Run
 docker compose up
