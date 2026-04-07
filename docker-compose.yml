@@ -1,0 +1,10 @@
+services:
+  java:
+    image: code-sandbox-nodejs:v1
+    pull_policy: never
+    env_file: .env
+    ports:
+      - "8075:8000"
+    volumes:
+      - ./.dcs/code_sandbox/workspace:/workspace
+      - ./.dcs/code_sandbox/logs:/app/logs
