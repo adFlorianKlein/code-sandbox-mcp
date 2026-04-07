@@ -3,4 +3,5 @@ FROM code-sandbox-base:${BASE_VERSION}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     maven \
+    gradle \
     && rm -rf /var/lib/apt/lists/*
